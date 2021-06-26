@@ -1,4 +1,4 @@
-package com.vvvxd.File_CRUD_Java;
+package com.vvvxd.File_CRUD_Java.model;
 
 public class Skill {
     private Long id;
@@ -41,4 +41,5 @@ public class Skill {
                 ", name='" + name + '\'' +
                 '}';
     }
+
 }
