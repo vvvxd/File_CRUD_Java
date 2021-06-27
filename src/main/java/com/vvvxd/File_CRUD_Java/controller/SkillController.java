@@ -2,11 +2,12 @@ package com.vvvxd.File_CRUD_Java.controller;
 
 import com.vvvxd.File_CRUD_Java.model.Skill;
 import com.vvvxd.File_CRUD_Java.repository.SkillRepository;
+import com.vvvxd.File_CRUD_Java.repository.implementations.JsonSkillRepositoryImpl;
 
 import java.util.List;
 
 public class SkillController {
-    private final SkillRepository skillRepository= new SkillRepository();
+    private final SkillRepository skillRepository= new JsonSkillRepositoryImpl();
 
     public Skill getById(Long id) {
         return skillRepository.getById(id);

@@ -2,8 +2,10 @@ package com.vvvxd.File_CRUD_Java;
 
 
 import com.vvvxd.File_CRUD_Java.model.Skill;
-import com.vvvxd.File_CRUD_Java.repository.SkillRepository;
+import com.vvvxd.File_CRUD_Java.model.Team;
+import com.vvvxd.File_CRUD_Java.view.DeveloperView;
 import com.vvvxd.File_CRUD_Java.view.SkillView;
+import com.vvvxd.File_CRUD_Java.view.TeamView;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,5 +18,10 @@ public class Main {
 
 //        sr.deleteById(100301L);
 
+
+//        DeveloperView dv= new DeveloperView();
+//        dv.save();
+        TeamView dv= new TeamView();
+        dv.save();
     }
 }
